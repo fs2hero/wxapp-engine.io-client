@@ -10,5 +10,13 @@ module.exports = {
         library: 'io',
         libraryTarget: 'commonjs2'
     },
+    resolve: {
+        fallback: {
+            fs: false,
+            child_process: false,
+            http: false,
+            https: false
+        }
+    },
     mode: 'production'
 }
